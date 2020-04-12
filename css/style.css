@@ -76,6 +76,7 @@ body{
     font-size: 60px;
     font-weight: 400;
     letter-spacing: 35px;
+    animation: moveInLeft 1s;
 
 }
 
@@ -85,4 +86,22 @@ body{
     font-weight: 700;
     letter-spacing: 17.4px;
 
+}
+
+@keyframes moveInLeft{
+
+    0%{
+        opacity: 0;
+        transform: translate(-100px);
+    }
+
+    80%{
+        transform: translate(20px);
+    
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+    }
 }
